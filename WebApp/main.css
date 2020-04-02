@@ -1,4 +1,4 @@
-/* calibrate parallax sections height */
+/* calibrate parallax sections height(in mobile) */
   .parallax-window {
       height: auto;
       background: transparent;
@@ -21,6 +21,11 @@
     scrollbar-color: grey #111111;
   }
 
+  html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+  }
+
   .section{
     padding: 3.9rem;
   }
@@ -30,11 +35,22 @@
     max-width: 100%
   }
 
-  .containerr{
+  .container-Custom{
     width: 100%;
     max-width: 122.5rem;
     margin: 0;
     padding: 0 2.4rem;
+  }
+
+  .fadingline{
+    /* tune margin for line size */
+    margin: 0 12.5rem;
+    /* margin-left: 100px; */
+    display: block;
+    /* width: 50%; */
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), white , rgba(0, 0, 0, 0));
   }
 /* html Section ends */
 
@@ -53,14 +69,7 @@
     left: 0;
   }
 
-  .floor-header{
-    /* height: 100vh;
-    width: 100vh; */
-    position: relative;
-    overflow: hidden;
-    top: -150px;
-    left: 0;
-  }
+
 /* end video sections */
 
   .Quotes-field{
@@ -81,46 +90,34 @@
   display: flex;
   flex-direction: column;
   height: inherit;
-  justify-content: space-between;
-  }
-
-  .Text-Content {
-    flex-grow: 2;
-  }
-
-  .Text-Content_2 {
-    flex-grow: 2;
-  }
-
-  .Text-Content_3 {
-    flex-grow: 2;
   }
 /* styles for parallax container end */
 
   .global-headline{
     text-align: center;
     margin-top: 3.9rem;
+    margin-bottom: 2rem;
   }
 
-  .Text-Content .global-headline {
-    margin-top: 6.9rem;
+  .Story-area .global-headline {
+    /* margin-top: 6.9rem; */
   }
 
-  .BackStory-sections {
+  .Display-styles {
     text-align: center;
   }
 
-  .Text-BackStory {
+  .Text-infomation {
     margin-bottom: 3rem;
   }
 
-  .Text-BackStory p{
+  .Text-infomation p{
     line-height: 1.6;
     margin-bottom: 2.4rem;
   }
 
   .sub-headline{
-    font-size: 8.5rem;
+    font-size: 5.5rem;
     color: #c59d5f;
     font-family: 'Niconne';
     font-weight: 100;
@@ -133,47 +130,81 @@
     font-size: 10.3rem;
   }
   /* chỉnh cái này đi */
-  .headline{
+  /* .headline{
     color: white;
     font-size: 3.7rem;
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: .5rem;
-    }
+    } */
   /* ------------------ */
 
   /* Story Section ends */
+
+
   .image-group{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1.5rem;
   }
 
-  .Text-Content_2 .Text-gameplay{
+  .Gameplay-area .Text-infomation{
     padding-top: 3rem;
     margin-bottom: 0;
   }
+
+  .Gameplay-area .global-headline {
+    margin-top: 0rem;
+  }
   /* gameplay section ends */
 
-/* experiment */
-  .BackStory-sections{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-
-  .BackStory-sections > div{
-    flex: 1;
-  }
-
-  .padding-right {
-    padding-right: 7rem;
-  }
 
 
+  /* toggle from mobile to desktop version */
+    @media screen and (min-width: 900px) {
 
+      .section {
+        padding: 7.9rem;
+      }
 
+      .sub-headline {
+        font-size: 10rem;
+      }
 
+      .First-letter {
+        font-size: 12rem;
+      }
+
+      /* .headline {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+      } */
+
+      .Display-styles{
+       display: flex;
+       align-items: center;
+     }
+
+     .Display-styles > div{
+       flex: 1;
+     }
+
+     .padding-right {
+       padding-right: 7rem;
+     }
+   }
+
+    @media screen and (max-width: 400px) {
+      .section{
+        padding:0rem;
+      }
+    }
+
+    @media screen and (resolution: 90dpi) {
+      html{
+        font-size: 16px;
+      }
+    }
 
 
 
@@ -195,8 +226,8 @@
 
 /* ----------------------------------------------------------------------------- */
   #pic1{
-    width: 20%;
-    height: 20%;
+    width: 10%;
+    height: 10%;
   }
 
   .pic-intro img {
@@ -207,11 +238,4 @@
 
   #signup{
     background-color: black;
-    /*background-image: url(https://steamuserimages-a.akamaihd.net/ugc/643249463521457690/17FF196159301FEEC23679B71232EB9A105857FC/?imw=1024&imh=576&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=true);
-    max-width: 100%;
-      height: auto;
-      background-position: center;
-      background-size:cover;*/
   }
-
-/*  -------------------------------------------------------------------------------------*/

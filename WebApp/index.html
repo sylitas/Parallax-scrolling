@@ -17,17 +17,19 @@
 
 
 <!------------------------------------------------------------------------->
-  <!-- JavaScript using our own -->
-  <script src="main.js"></script>
-
   <!-- CSS using our own -->
   <link href="main.css" rel="stylesheet">
 
   <!-- scroll reveal installation -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/scrollreveal@4"></script>
 
   <!-- fantasy font  -->
   <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/ccbffdc2ae.js" crossorigin="anonymous"></script>
+
+
 
 </head>
 <!-- head end -->
@@ -35,7 +37,7 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img\logo-ori-wotw.png" id = "pic1"/></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,13 +47,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#story">Story</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#gameplay">Gameplay</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#world">World</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Forest</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Subcribe</a>
@@ -59,48 +58,51 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- intro video Section-->
   <section class="video_intro">
     <div class="relative_container">
       <video src="img\trailer.mp4" id="video" autoplay loop muted ></video>
+      <!-- experiment floor-header -->
       <div class="pic-intro ">
-        <img src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/floor/floor10.png" class="img-fluid"  alt="">
+        <img src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/floor/floor10.png" class="img-fluid" alt="">
       </div>
     </div>
+
   </section>
 
 <!-- BackStory overview -->
-  <section class="opening story" >
+  <section class="opening story">
   <div class="Quotes-field">
     <p>The little spirit Ori is no stranger to peril, but when a fateful flight puts the owlet Ku in harm’s way, it will take more than bravery to bring a family back together, heal the broken land of Niwen, and discover Ori’s true destiny.</p>
   </div>
   </section>
 
 
-</font>
+
 <!-- Story Section -->
-  <section class="parallax-window " id="story" data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg03.jpg">
+  <section class="parallax-window " data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg03.jpg">
       <div class="flex-container">
         <img src="img\ceiling03.png" class="img-fluid" alt="">
-          <div class="Text-Content section"> <!-- act as Section -->
-            <div class="containerr">
-              <div class="global-headline">
+          <div class="Story-area section"> <!-- act as Section -->
+            <div class="container-Custom">
+                <div class="Display-styles">
+                  <div class="Text-infomation padding-right animate-left">
+                    <div class="global-headline">
                       <h2 class="sub-headline">
-                        <span class="First-letter">B</span>ack Story
-                        <p></p>
+                        <span class="First-letter">S</span>tory
                       </h2>
-                      <h1 class="headline">Ori and the blind Forest</h1>
+                      <h1 class="headline"><br></h1>
+                      <div class="styles-for-header">
+                        <span class="fadingline"></span>
+                      </div>
                     </div>
-                <div class="BackStory-sections">
-                  <div class="Text-BackStory padding-right animate-left">
-                    
-                    <b><font color="white"> The voice of the Spirit Tree in the forest of Nibel narrates the story of when Ori, a white guardian spirit, fell from the tree during a storm as a newborn and was adopted by a creature named Naru, who raised Ori as her own.[5] A cataclysmic event soon makes all of the forest wither, and Naru dies of starvation. Newly orphaned, Ori was left to explore the forest on their own.[3][5][6] After collapsing near the Spirit Tree and being revived by it, Ori later meets Sein (pronounced /saɪn/), a being in the shape of a small blue orb, who can attack harmful creatures, and guides Ori on a journey to restore the forest.[4] Sein guides Ori to recover the light of three main elements supporting the balance of Nibel: Waters, Winds and Warmth.</font></b>
+                    <p><font color="white" style="font-size: 19px">The story begins where all stories should... at the beginning. The peace in the forest of Nibel, which at first glance seems to be kept well in the harmonious branches of the Spirit Tree, is suddenly shattered by a breathtaking roar of thunder. A storm breaks out, covering the sun and pummeling the forest with heavy rain and lightning. Another incredible flash zooms in on the trembling Spirit Tree, particularly highlighting one specific shining leaf. A powerful gust of wind tears the stem of the beautiful leaf, and in fluid, dazzling motions the currents quickly pull it away.</font></p>
                   </div>
-	                <div class="Story-image animate-right">
-	                    <img src="img\our-story-1.jpg" alt="">
-	                </div>
+                  <div class="Story-image animate-right">
+                    <img src="img\pass1.jpg" alt="">
+                  </div>
                 </div>
             </div>
           </div>
@@ -111,26 +113,29 @@
 
 
   <!-- Gameplay Section-->
-  <section class="parallax-window-Gameplay " id="gameplay" data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg04.jpg">
+  <section class="parallax-window-Gameplay " data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg04.jpg">
     <div class="flex-container">
       <img src="img\ceiling02.png" class="img-fluid" alt="">
-        <div class="Text-Content_2 section">
-          <div class="containerr">
-            <div class="BackStory-sections"><!-- same as restaurant info  -->
+        <div class="Gameplay-area section">
+          <div class="container-Custom">
+            <div class="Display-styles"><!-- same as restaurant info  -->
               <div class="image-group padding-right animate-left">
-                <img src="img\menu-group-1.jpg" alt="">
-                <img src="img\menu-group-2.jpg" alt="">
-                <img src="img\menu-group-3.jpg" alt="">
-                <img src="img\menu-group-4.jpg" alt="">
+                <img src="Boss/worms.jpg" alt="">
+                <img src="Boss/wolf.png" alt="">
+                <img src="Boss/spider.jpg" alt="">
+                <a href="https://oriandtheblindforest.fandom.com/wiki/Achievements_(Will_of_the_Wisps)"><img src="Boss/bird.jpg" alt=""></a>
               </div>
-              <div class="Text-gameplay animate-right ">
+              <div class="Text-infomation animate-right ">
                 <div class="global-headline">
                   <h2 class="sub-headline">
                     <span class="First-letter">G</span>ameplay
                   </h2>
-                  <h1 class="headline">Lorem ipsum</h1>
+                  <h1 class="headline"><br></h1>
+                  <div class="styles-for-header">
+                    <span class="fadingline"></span>
+                  </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p><font color="white" style="font-size: 19px">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</font></p>
               </div>
             </div>
           </div>
@@ -140,18 +145,21 @@
   </section>
 
   <!-- The World Section -->
-  <section class="parallax-window-The-World " id="world" data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg06.jpg">
+  <section class="parallax-window-The-World " data-parallax="scroll"  data-image-src="https://msgpwebcdn.azureedge.net/ori/wp-content/themes/ori/dist/images/scenes/background/bg06.jpg">
   	<div class="flex-container">
       <img src="img\ceiling06.png" class="img-fluid" alt="">
-          <div class="Text-Content_3 section">
-            <div class="containerr">
-                <div class="BackStory-sections">
-                  <div class="Text-BackStory padding-right animate-left">
+          <div class="The-World section">
+            <div class="container-Custom">
+                <div class="Display-styles">
+                  <div class="Text-infomation padding-right animate-left">
                     <div class="global-headline">
                       <h2 class="sub-headline">
-                        <span class="First-letter">T</span>he World
+                        <span class="First-letter">T</span>heWorld
                       </h2>
-                      <h1 class="headline">lorem ipsum</h1>
+                      <h1 class="headline"><br></h1>
+                      <div class="styles-for-header">
+                        <span class="fadingline"></span>
+                      </div>
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                   </div>
@@ -166,9 +174,20 @@
     </div>
   </section>
 
+
+
+
+
+
+
+
+
+
+
   <!-- Signup Section -->
   <footer id="signup">
   <section>
+  	<img src="img\ceiling09.png" style="max-width: 100%;height: auto;">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -176,22 +195,19 @@
       </div>
     </div>
   </section>
-
-
-
   <!-- Footer -->
-  <section id="social-networks-follow" >
-    <div class="flex-container">
-        <div class="content text-center">
-            <h1>Follow Ori!</h1>
-            <a href="https://twitter.com/OriTheGame"><img src="icon\twitter_icon.png"></a>
-            <a href="https://twitter.com/OriTheGame"><img src="icon\instagram_icon.png"></a>
-            <a href="https://www.facebook.com/OriTheGame/"><img src="icon\facebook_icon.png"></a>
+  <section id="social-networks-follow">
+    <div class="container">
+        <div class="col">
+            <div class="content text-center">
+                <h1>Follow Ori!</h1>
+                <a href="https://twitter.com/OriTheGame"><img src="icon\twitter_icon.png"></a>
+                <a href="https://twitter.com/OriTheGame"><img src="icon\instagram_icon.png"></a>
+                <a href="https://www.facebook.com/OriTheGame/"><img src="icon\facebook_icon.png"></a>
+            </div>
         </div>
     </div>
 </section>
-
-
 
   <div class="container">
         <div class="footer-logos">
@@ -242,6 +258,10 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/grayscale.min.js"></script>
+
+  <!-- JavaScript using our own -->
+  <script src="main.js"></script>
+
 
 </body>
 </html>

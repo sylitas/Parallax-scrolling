@@ -1,9 +1,31 @@
-window.addEventListener("scroll", function() {showFunction()});
+//scrollreveal
 
-function showFunction() {
-    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
-        document.getElementById("toptexts2").style.display = "block";
-    } else {
-        document.getElementById("toptexts2").style.display = "none";
-    }
-}
+window.sr = ScrollReveal();
+
+sr.reveal('.animate-left' , {
+  origin: 'left',
+  duration: 1000,
+  distance: '20rem',
+  delay: 300
+});
+
+sr.reveal('.animate-right' , {
+  origin: 'right',
+  duration: 1000,
+  distance: '20rem',
+  delay: 600
+});
+
+sr.reveal('.animate-top' , {
+  origin: 'top',
+  duration: 1000,
+  distance: '20rem',
+  delay: 600
+});
+
+sr.reveal('.animate-bottom' , {
+  origin: 'bottom',
+  duration: 1000,
+  distance: '20rem',
+  delay: 600
+});
