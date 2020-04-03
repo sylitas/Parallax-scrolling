@@ -29,6 +29,8 @@
   <!-- Font Awesome CDN -->
   <script src="https://kit.fontawesome.com/ccbffdc2ae.js" crossorigin="anonymous"></script>
 
+  <!-- fancybox CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
 
 </head>
@@ -40,7 +42,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img\logo-ori-wotw.png" id = "pic1"/></a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img\logo-ori-wotw.png" id = "pic1" ></a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" style="color: white; font-size: 15px">
         Menu
         <i class="fas fa-bars"></i>
@@ -102,10 +104,11 @@
                         <span class="fadingline"></span>
                       </div>
                     </div>
-                    <p><font color="white" style="font-size: 19px">The story begins where all stories should... at the beginning. The peace in the forest of Nibel, which at first glance seems to be kept well in the harmonious branches of the Spirit Tree, is suddenly shattered by a breathtaking roar of thunder. A storm breaks out, covering the sun and pummeling the forest with heavy rain and lightning. Another incredible flash zooms in on the trembling Spirit Tree, particularly highlighting one specific shining leaf. A powerful gust of wind tears the stem of the beautiful leaf, and in fluid, dazzling motions the currents quickly pull it away.</font></p>
+                    <p id="story1"><font color="white" style="font-size: 19px">The story begins where all stories should... at the beginning. The peace in the forest of Nibel, which at first glance seems to be kept well in the harmonious branches of the Spirit Tree, is suddenly shattered by a breathtaking roar of thunder. A storm breaks out, covering the sun and pummeling the forest with heavy rain and lightning. Another incredible flash zooms in on the trembling Spirit Tree, particularly highlighting one specific shining leaf. </font></p>
+                    <p id="story2"><font color="white" style="font-size: 19px">The voice of the Spirit Tree in the forest of Niwen narrates a story that takes place immediately after the events of Blind Forest. Kuro's last egg hatches, giving birth to Ku. Ku is born with a damaged wing, rendering her unable to fly before Gumo affixes Kuro's feather to her wing. Ku and Ori go off on a flight, eventually taking themselves to Niwen, where a storm causes Ori and Ku to be separated.Ori's search for Ku leads them to Kwolok. </font></p>
                   </div>
                   <div class="Story-image animate-right">
-                    <img id="img-story" src="img\pass1.jpg" >
+                    <img id="img-story" src="img\pass1.jpg" onclick="flipll()">
                   </div>
                 </div>
             </div>
@@ -124,13 +127,79 @@
           <div class="container-Custom">
             <div class="Display-styles"><!-- same as restaurant info  -->
               <div class="image-group padding-right animate-left">
-                <img src="Boss/wolf.png" onclick="swaptext()" alt="">
-                <img src="Boss/spider.jpg" onclick="swaptextX2()" alt="">
-                <img src="Boss/bird.jpg" onclick="swaptextX3()" alt="">
-                <img src="Boss/worms.jpg" onclick="swaptextX4()" alt="">
-                <img src="Boss/Kwolok.png" onclick="swaptextX5()" alt="">
-                <img src="Boss/hornbug.png" onclick="swaptextX6()" alt="">
+                
+                <div class="flip-card" style="padding-bottom: 200px">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Boss/wolf.png" onclick="swaptext()" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="Boss/wolf.png" onclick="swaptext()" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flip-card" style="padding-bottom: 200px">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Boss/spider.jpg" onclick="swaptextX2()" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="Boss/spider.jpg" onclick="swaptextX2()" alt="">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="flip-card" style="padding-bottom: 200px">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Boss/bird.jpg" onclick="swaptextX3()" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="Boss/bird.jpg" onclick="swaptextX3()" alt="">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="flip-card" style="padding-bottom: 200px">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Boss/worms.jpg" onclick="swaptextX4()" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="Boss/worms.jpg" onclick="swaptextX4()" alt="">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="flip-card" style="padding-bottom: 200px">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Boss/Kwolok.png" onclick="swaptextX5()" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="Boss/Kwolok.png" onclick="swaptextX5()" alt="">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="flip-card" style="padding-bottom: 200px">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="Boss/hornbug.png" onclick="swaptextX6()" alt="">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="Boss/hornbug.png" onclick="swaptextX6()" alt="">
+                    </div>
+                  </div>
+                </div>
               </div>
+
+
               <div class="Text-infomation animate-right ">
                 <div class="global-headline">
                   <h2 class="sub-headline">
@@ -142,7 +211,7 @@
                   </div>
                 </div>
                 <div class="background-for-word">
-                  <p id="Clicktable-origin"><font color="white" style="font-size: 19px;">a boss is a significant computer-controlled enemy.[1] A fight with a boss character is commonly referred to as a boss battle or boss fight. Boss battles are generally seen at a climax of a particular section of the game, usually at the end of a level or stage, or guarding a specific objective; the boss enemy is generally far stronger than the opponents the player has faced up to that point and is usually faced solo.</font></p>
+                  <p id="Clicktable-origin"><font color="white" style="font-size: 19px;">A boss is a significant computer-controlled enemy.[1] A fight with a boss character is commonly referred to as a boss battle or boss fight. Boss battles are generally seen at a climax of a particular section of the game, usually at the end of a level or stage, or guarding a specific objective; the boss enemy is generally far stronger than the opponents the player has faced up to that point and is usually faced solo.<i class="invisible"> dots dots dots dots dots </i></font></p>
                 </div>
                 <p id="Clicktable-first"><font color="white" style="font-size: 19px"><strong style="color: blue">Howl </strong>is the first boss in Ori and the Will of the Wisps and forms part of the tutorial section of the game. Here both combat and platforming skills will be put to the test. Howl can be spotted in the background as you approach the Spirit Gate after finishing the quest with Tokk. A little further on and Howl pounces through the screen, roaring.On the left or right side of the arena she fires a shotgun spread of corruption projectiles from her mouth.</font></p>
                 <p id="Clicktable-second"><font color="white" style="font-size: 19px">Once you’ve worked your way through Mouldwood Depths, your reward is a fight against a massive spider,<strong style="color: green"> Mora</strong>. She’ll initially plunge you downwards, and you’ll fall into the arena properly. The handy-looking ledge here won’t be around for long, so don’t bother with it. You should notice that either side of the arena, the walls are bare, meaning they can be climbed. This will be especially useful for dodging and gaining height during the fight. </font></p>
@@ -179,8 +248,19 @@
                   <p id="text2"><font color="white" style="font-size: 19px"><strong>Kuro's Egg</strong>, also known as Ku, is the unborn child of Kuro, and her only remaining offspring.Kuro's Egg has the familiar appearance of a normal bird's egg, being ovular in shape but uncommonly huge in size. In fact, it is bigger than most of the characters in the game, save Kuro herself. The cream-colored shell of Kuro's Egg is speckled with dots.</font></p>
                 </div>
                   <div class="image-group">
-                    <img class="animate-top" id="img1" src="img\ori.jpg" onclick="swap_text_and_img()">
-                    <img class="animate-bottom" src="lightbox/ori-origin.png">
+                    <img class="animate-top" id="img1" src="img\ori.jpg" onclick="swap_text_and_img99()">
+                    <!-- lightbox -->
+                    <a href="lightbox/Grom.png" data-fancybox="gallery" data-caption = "Grom">
+                    <img class="animate-bottom" src="img/character.jpg">
+                    </a>
+                    <a class="hidden" href="lightbox/Kwolok.png" data-fancybox="gallery" data-caption = "Kwolok"></a>
+                    <a class="hidden" href="lightbox/Lupo.png" data-fancybox="gallery" data-caption = "Lupo"></a>
+                    <a class="hidden" href="lightbox/Motay.png" data-fancybox="gallery" data-caption = "Motay"></a>
+                    <a class="hidden" href="lightbox/Opher.png" data-fancybox="gallery" data-caption = "Opher"></a>
+                    <a class="hidden" href="lightbox/Tokk.png" data-fancybox="gallery" data-caption = "Tokk"></a>
+                    <a class="hidden" href="lightbox/Tuley.png" data-fancybox="gallery" data-caption = "Tuley"></a>
+                    <a class="hidden" href="lightbox/Twillen.png" data-fancybox="gallery" data-caption = "Twillen"></a> 
+                    <!-- lightbox end -->
                   </div>
             </div>
           </div>
@@ -194,7 +274,6 @@
   <!-- Signup Section -->
   <footer id="signup">
   <section>
-  	<img src="img\ceiling09.png" style="max-width: 100%;height: auto;">
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-lg-8 mx-auto text-center">
@@ -268,7 +347,9 @@
 
   <!-- JavaScript using our own -->
   <script src="main.js"></script>
-
+  <!-- jQuery and fancybox JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </body>
 </html>

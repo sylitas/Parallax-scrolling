@@ -40,6 +40,8 @@ sr.reveal('.animate-bottom' , {
   var z = document.getElementById("Clicktable-origin");
   var text1 = document.getElementById("text1");
   var text2 = document.getElementById("text2");
+  var story1 = document.getElementById("story1");
+  var story2 = document.getElementById("story2");
 
 function swaptext() {
 
@@ -131,11 +133,11 @@ function swaptextX6() {
     x.style.display = "none";
   }
 }
-
+// --------------------------------------------------------------------
 
 text2.style.display = "none";
 
-function swap_text_and_img() {
+function swap_text_and_img99() {
  
   if (text2.style.display == "block"){
     text2.style.display = "none";
@@ -145,6 +147,21 @@ function swap_text_and_img() {
     text2.style.display = "block";
     text1.style.display = "none";
     document.getElementById("img1").src = "img/ku.png";
+  }
+}
+
+story2.style.display = "none";
+
+function flipll() {
+ 
+  if (story2.style.display == "block"){
+    story2.style.display = "none";
+    story1.style.display = "block";
+    document.getElementById("img-story").src = "img/pass1.jpg";
+  } else {
+    story2.style.display = "block";
+    story1.style.display = "none";
+    document.getElementById("img-story").src = "img/ori-origin-2.png";
   }
 }
 
