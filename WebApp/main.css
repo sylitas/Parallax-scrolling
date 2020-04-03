@@ -200,6 +200,40 @@
       }
     }
 
+  /* styles for toggle texts */
+      #Clicktable-origin{
+
+      }
+
+      #Clicktable-first{
+        display: none;
+
+      }
+
+      #Clicktable-second{
+        display: none;
+
+      }
+
+      #Clicktable-third{
+        display: none;
+
+      }
+
+      #Clicktable-forth{
+        display: none;
+
+      }
+
+      #Clicktable-fifth{
+        display: none;
+
+      }
+
+      #Clicktable-sixth{
+        display: none;
+
+      }
 
 
 
@@ -234,10 +268,9 @@
   #signup{
     background-color: black;
   }
-  @media screen and (min-width: 1600px) { 
+  @media screen and (min-width: 1600px) {
 
     html{
           font-size: 20px;
         }
   }
-
